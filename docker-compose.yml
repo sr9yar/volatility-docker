@@ -1,0 +1,9 @@
+services:
+  custom-volatility:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: custom-volatility-image
+    volumes:
+      - ./data:/data
+    container_name: custom-volatility
